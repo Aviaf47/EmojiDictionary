@@ -14,18 +14,23 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var largeEmoji: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
-    
+    @IBOutlet weak var birthyearLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+
     override func viewDidLoad() {
-        super.viewDidLoad()
+               super.viewDidLoad()
 
         largeEmoji.text = emoji
         
         if emoji == "🐹"{
             emojiLabel.text = "A cute hamster!"
-        
+        	categoryLabel.text = "Category: Animal"
+            birthyearLabel.text = "Year: 2008"
     }
-        if emoji == "🐹"{
-            emojiLabel.text = "A cute hamster!"
+        if emoji == "💩"{
+            emojiLabel.text = "A poop!"
+            categoryLabel.text = "Category: Items"
+            birthyearLabel.text = "Year: 2006"
             
         }
         if emoji == "🐹"{

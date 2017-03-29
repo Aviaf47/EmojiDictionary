@@ -68,16 +68,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUS-PS-L32">
+                                <rect key="frame" x="122.5" y="404" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="she-S4-xRx">
+                                <rect key="frame" x="147" y="445" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="she-S4-xRx" firstAttribute="centerX" secondItem="1OS-W9-Ppf" secondAttribute="centerX" id="06q-jr-b2u"/>
+                            <constraint firstItem="eUS-PS-L32" firstAttribute="centerX" secondItem="1OS-W9-Ppf" secondAttribute="centerX" id="DDZ-PI-MeY"/>
                             <constraint firstItem="1rY-IZ-Ibq" firstAttribute="centerX" secondItem="1OS-W9-Ppf" secondAttribute="centerX" id="Nh0-09-Qk9"/>
                             <constraint firstItem="c04-x8-9CU" firstAttribute="centerX" secondItem="1OS-W9-Ppf" secondAttribute="centerX" id="PCz-cl-cLZ"/>
                             <constraint firstItem="c04-x8-9CU" firstAttribute="top" secondItem="1rY-IZ-Ibq" secondAttribute="bottom" constant="20" id="RdH-9y-tdE"/>
+                            <constraint firstItem="eUS-PS-L32" firstAttribute="top" secondItem="c04-x8-9CU" secondAttribute="bottom" constant="20" id="ZEp-5t-8Nq"/>
                             <constraint firstItem="1rY-IZ-Ibq" firstAttribute="top" secondItem="MtJ-Ya-Jna" secondAttribute="bottom" constant="40" id="iS7-3H-hbW"/>
+                            <constraint firstItem="she-S4-xRx" firstAttribute="top" secondItem="eUS-PS-L32" secondAttribute="bottom" constant="20" id="lxX-nD-Ebm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthyearLabel" destination="she-S4-xRx" id="ghK-6z-dDm"/>
+                        <outlet property="categoryLabel" destination="eUS-PS-L32" id="UZo-uD-LH4"/>
                         <outlet property="emojiLabel" destination="c04-x8-9CU" id="6Pd-rM-4C1"/>
                         <outlet property="largeEmoji" destination="1rY-IZ-Ibq" id="Flc-ZX-Ch8"/>
                     </connections>
