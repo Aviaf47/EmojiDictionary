@@ -10,7 +10,8 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
 
-    var emoji = "No Emoji"
+    var emoji = Emoji()
+    
     
     @IBOutlet weak var largeEmoji: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
@@ -20,23 +21,11 @@ class DefinitionViewController: UIViewController {
     override func viewDidLoad() {
                super.viewDidLoad()
 
-        largeEmoji.text = emoji
+        largeEmoji.text = emoji.name
+        birthyearLabel.text = "Birthyear: \(emoji.year)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        emojiLabel.text = emoji.stringname
         
-        if emoji == "🐹"{
-            emojiLabel.text = "A cute hamster!"
-        	categoryLabel.text = "Category: Animal"
-            birthyearLabel.text = "Year: 2008"
-    }
-        if emoji == "💩"{
-            emojiLabel.text = "A poop!"
-            categoryLabel.text = "Category: Items"
-            birthyearLabel.text = "Year: 2006"
-            
-        }
-        if emoji == "🐹"{
-            emojiLabel.text = "A cute hamster!"
-            
-        }
 
         
     }
